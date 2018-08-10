@@ -66,7 +66,7 @@ My final model consisted of the following layers:
 
 | Layer         		|  |     Description	        					| 
 |:---------------------:|:--:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
+| Input         		| 32x32x3 RGB image   							| |
                                 |
 | Preprocess     	| | 	| 
 |                    | Batch Normalization | 
@@ -110,7 +110,6 @@ My model was based on [Densenet](https://github.com/liuzhuang13/DenseNet) archit
 For each layer, the feature maps of all preceding layers are treated as separate inputs whereas its own feature maps are passed on as inputs to all subsequent layers. This connectivity pattern yields state-of-the-art accuracies on CIFAR10/100 (with or without data augmentation) and SVHN. On the large scale ILSVRC 2012 (ImageNet) dataset, DenseNet achieves a similar accuracy as ResNet, but using less than half the amount of parameters and roughly half the number of FLOPs. Since, it performs well on imagenet with half of the amount of parameters, I expect it would have similar results on the traffic sign classification problem as well.
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-
 Training loss: 0.056222
 Training accuracy: 0.992188
 
