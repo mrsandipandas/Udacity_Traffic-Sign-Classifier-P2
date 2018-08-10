@@ -67,21 +67,17 @@ My final model consisted of the following layers:
 | Layer         		|  |     Description	        					| 
 |:---------------------:|:--:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| |
-                                |
 | Preprocess     	| | 	| 
 |                    | Batch Normalization | 
 |                    | Convolution | Kernal size 3x3, Padding same
 |                    | Prelu |                                  |
 |                    | Convolution | Kernal size 3x3, Padding same
 |                    | Prelu |  				|
-                             |
 | Dense Block	     |       |       Kernal size 5x5, Padding same     |
 |                    | Maxpool |     Kernal size 2x2, Padding same     |
-        				|
 | Dense Block	     |       |       Kernal size 3x3, Padding same     |
 |                    | Dropout |     Keep probability = 0.9     |
 |                    | Maxpool |     Kernal size 2x2, Padding same     |
-        				|
 | Dense Block	     |       |       Kernal size 3x3, Padding same     |
 |                    | Dropout |     Keep probability = 0.9     |
 |                    | Maxpool |     Kernal size 1x1, Padding same     |
