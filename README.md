@@ -108,14 +108,12 @@ My model is based on [Densenet](https://github.com/liuzhuang13/DenseNet) archite
 For each layer, the feature maps of all preceding layers are treated as separate inputs whereas its own feature maps are passed on as inputs to all subsequent layers. This connectivity pattern yields state-of-the-art accuracies on CIFAR10/100 (with or without data augmentation) and SVHN. On the large scale ILSVRC 2012 (ImageNet) dataset, DenseNet achieves a similar accuracy as ResNet, but using less than half the amount of parameters and roughly half the number of FLOPs. Since, it performs well on imagenet with half of the amount of parameters, I expect it would have similar results on the traffic sign classification problem as well.
 
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?<br/>
-Training loss: 0.056222
-Training accuracy: 0.992188
-
-Validation loss: 0.010780
-Validation accuracy: 0.998000
-
-Testing loss: 0.042439
-Testing accuracy:  0.987648
+ * Training loss: 0.056222
+ * Training accuracy: 0.992188
+ * Validation loss: 0.010780
+ * Validation accuracy: 0.998000
+ * Testing loss: 0.042439
+ * Testing accuracy:  0.987648
  
 
 ### Test a Model on New Images
