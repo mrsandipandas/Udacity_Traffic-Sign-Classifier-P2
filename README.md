@@ -122,11 +122,11 @@ For each layer, the feature maps of all preceding layers are treated as separate
 
 Here are five German traffic signs that I found on the web:
 
-![Random traffic signs][image3] 
+![Random traffic signs][image4] 
 
 In the beginning I cropped out the region of interest based on the traffic signs in the image and it looked as follows:
 
-![Cropped traffic signs][image4] 
+![Cropped traffic signs][image3] 
 
 The last image would be difficult as it does not have any labelled data.
 
