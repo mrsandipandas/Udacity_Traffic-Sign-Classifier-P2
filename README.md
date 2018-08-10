@@ -110,10 +110,10 @@ For each layer, the feature maps of all preceding layers are treated as separate
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?<br/>
 Training loss: 0.056222
 Training accuracy: 0.992188
-<br/>
+
 Validation loss: 0.010780
 Validation accuracy: 0.998000
-<br/>
+
 Testing loss: 0.042439
 Testing accuracy:  0.987648
  
