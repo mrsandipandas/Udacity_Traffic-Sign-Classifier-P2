@@ -49,6 +49,8 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ![Dataset summary][image1]
 
+Similar representation is available for the test set in the html file or in the jupyter notebook.
+
 ### Design and Test a Model Architecture
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
@@ -99,13 +101,13 @@ To train the model, I used the following hyperparameters:
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 
-* What architecture was chosen?
+* What architecture was chosen?<br/>
 My model was based on [Densenet](https://github.com/liuzhuang13/DenseNet) architecture. 
 
-* Why did you believe it would be relevant to the traffic sign application?
+* Why did you believe it would be relevant to the traffic sign application?<br/>
 For each layer, the feature maps of all preceding layers are treated as separate inputs whereas its own feature maps are passed on as inputs to all subsequent layers. This connectivity pattern yields state-of-the-art accuracies on CIFAR10/100 (with or without data augmentation) and SVHN. On the large scale ILSVRC 2012 (ImageNet) dataset, DenseNet achieves a similar accuracy as ResNet, but using less than half the amount of parameters and roughly half the number of FLOPs. Since, it performs well on imagenet with half of the amount of parameters, I expect it would have similar results on the traffic sign classification problem as well.
 
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?<br/>
 Training loss: 0.056222
 Training accuracy: 0.992188
 
